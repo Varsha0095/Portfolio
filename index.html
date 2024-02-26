@@ -53,8 +53,8 @@
                     </div>
                     <div class="tab-contents" id="experience">
                         <ul>
-                            <li><span>July2023-Dec2023</span><br>Software Engineer at Sulopa Technologies Pvt Ltd</li>
-                            <li><span>June2022-June2023</span><br>Frontend Developer Intern at Sharpener Tech</li>
+                            <li><span>July2023 - Dec2023</span><br>Software Engineer at Sulopa Technologies Pvt Ltd</li>
+                            <li><span>June2022 - June2023</span><br>Frontend Developer Intern at Sharpener Tech</li>
                             <!-- <li><span>2017-2019</span><br>UI/ux design executive at coin digital ltd</li>
                             <li><span>2016-2017</span><br>Internship at ekart ecommerce</li> -->
                         </ul>
@@ -166,10 +166,10 @@
                 <div class="social-icons">
                     <!-- <a href="#"><i class="fa-brands fa-facebook"></i></a>
                     <a href="#"><i class="fa-brands fa-instagram"></i></a> -->
-                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/varsha-prajapati-52328b276/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Varsha0095?tab=repositories"><i class="fa-brands fa-github"></i></a>
                 </div>
-                <a href="my-images/Resume_Varsha_FE.pdf" download class="btn btn2">Download CV</a>
+                <a href="my-images/Resume(FE)_Varsha.pdf" download class="btn btn2">Download CV</a>
             </div>
             <div class="contact-right">
                 <form name="submit-to-google-sheet">
@@ -218,28 +218,28 @@
         }
     </script>
 
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbyYwxai9tMTVXpBi8kP8s8gf189FMZBBsZ_wi2v8aAiPOb995Kq2DdtNfX9g7xxnxh5/exec'
-    const form = document.forms['submit-to-google-sheet']
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyYwxai9tMTVXpBi8kP8s8gf189FMZBBsZ_wi2v8aAiPOb995Kq2DdtNfX9g7xxnxh5/exec'
+        const form = document.forms['submit-to-google-sheet']
   
-    const msg = document.getElementById("msg")
+        const msg = document.getElementById("msg")
 
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            msg.innerHTML = "Your Message has been sent successfully"
-            setTimeout(() => {
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                msg.innerHTML = "Your Message has been sent successfully"
+                setTimeout(() => {
                 msg.innerHTML = ""
-            }, 1000);
-            form.reset()
+                }, 1000);
+                form.reset()
         })  
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
- <script>
-    let seeMoreBtn = document.getElementById('#see-more');
-    let currentItem = 3;
+                .catch(error => console.error('Error!', error.message))
+         })
+    </script>
+    <script>
+        let seeMoreBtn = document.getElementById('#see-more');
+        let currentItem = 3;
 
     // seeMoreBtn.onclick = () => {
     //     let boxes = [...document.querySelectorAll('.container .work-list .work')];
@@ -251,17 +251,17 @@
     //         seeMoreBtn.style.display = 'none';
     //     }
     // }
-    loadMore = (work) => {
-        let boxes = [...document.querySelectorAll(".work-list .work")];
-        for (var i=currentItem; i<currentItem+3; i++){
-            boxes[i].style.display = 'grid';
+        loadMore = (work) => {
+            let boxes = [...document.querySelectorAll(".work-list .work")];
+            for (var i=currentItem; i<currentItem+3; i++){
+                boxes[i].style.display = 'grid';
+            }
+            currentItem += 3;
+            if(currentItem >= boxes.length){
+                seeMoreBtn.style.display = 'none';
+            }
         }
-        currentItem += 3;
-        if(currentItem >= boxes.length){
-            seeMoreBtn.style.display = 'none';
-        }
-    }
- </script>
+    </script>
 
 </body>
 </html>
