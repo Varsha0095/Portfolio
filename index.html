@@ -53,6 +53,7 @@
                     </div>
                     <div class="tab-contents" id="experience">
                         <ul>
+                            <li><span>April2024 - Present</span><br>Associate at Wipro</li>
                             <li><span>July2023 - Dec2023</span><br>Software Engineer at Sulopa Technologies Pvt Ltd</li>
                             <li><span>June2022 - June2023</span><br>Frontend Developer Intern at Sharpener Tech</li>
                             <!-- <li><span>2017-2019</span><br>UI/ux design executive at coin digital ltd</li>
@@ -161,15 +162,16 @@
         <div class="row">
             <div class="contact-left">
                 <h1 class="sub-title">Contact Me</h1>
-                <p><i class="fa-solid fa-paper-plane"></i>varsha03prajapati@gmail.com</p>
-                <p><i class="fa-solid fa-square-phone"></i>7719570035</p>
+                <p><i class="fa-solid fa-paper-plane"></i>vvvarsha03@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>+918559016955</p>
+                <p><i class="fa-solid fa-square-phone"></i>+917719570035</p>
                 <div class="social-icons">
                     <!-- <a href="#"><i class="fa-brands fa-facebook"></i></a>
                     <a href="#"><i class="fa-brands fa-instagram"></i></a> -->
                     <a href="https://www.linkedin.com/in/varsha-prajapati-52328b276/"><i class="fa-brands fa-linkedin"></i></a>
                     <a href="https://github.com/Varsha0095?tab=repositories"><i class="fa-brands fa-github"></i></a>
                 </div>
-                <a href="my-images/Resume(FE)_Varsha.pdf" download class="btn btn2">Download CV</a>
+                <a href="my-images/Varsha_Resume.pdf" download class="btn btn2">Download CV</a>
             </div>
             <div class="contact-right">
                 <form name="submit-to-google-sheet">
@@ -225,16 +227,16 @@
         const msg = document.getElementById("msg")
 
         form.addEventListener('submit', e => {
-            e.preventDefault()
+            e.preventDefault();
             fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                .then(response => {
+            .then(response => {
                 msg.innerHTML = "Your Message has been sent successfully"
                 setTimeout(() => {
                 msg.innerHTML = ""
                 }, 1000);
-                form.reset()
+                form.reset();
         })  
-                .catch(error => console.error('Error!', error.message))
+            .catch(error => console.error('Error!', error.message));
          })
     </script>
     <script>
